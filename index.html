@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap Navbar with Dropdowns and Search Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+      <a class="navbar-brand" href="#">Vacation Rentals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fas fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i>Top Destination</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-info-circle"></i>About Us
+
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-ticket-alt"></i>Book Tickets</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-calendar-check"></i> Registeration
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="image-background">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-md-6 ">
+
+          <h1 class="text-white mt-5">Best Vacation Rentals</h1>
+          <p class="text-white mt-3">Sed placerat fringilla quame!</p>
+          <button class="btn btn-primary ">Start Now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-4 ">
+        <div class="image-with-text text-center">
+          <img src="Resources/type3.jpg" alt="type 1" class="img-fluid rounded-circle">
+          <div class="display-6 mb-3 text-center">Type 1</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet delectus exercitationem veniam,
+          doloribus laudantium non cumque id! Fuga nam eum autem illum hic sunt dolores dignissimos molestias odit
+          inventore?</p>
+        <button type="button" class="btn btn-success mt-3">Book Now @530$</button>
+      </div>
+      <div class="col-4 ">
+        <div class="image-with-text text-center">
+          <img src="Resources/type3.jpg" alt="type 2" class="img-fluid rounded-circle">
+          <div class="display-6 mb-3 text-center">Type 2</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet delectus exercitationem veniam,
+          doloribus laudantium non cumque id! Fuga nam eum autem illum hic sunt dolores dignissimos molestias odit
+          inventore?</p>
+        <button type="button" class="btn btn-danger  mt-3">Book Now @560$</button>
+      </div>
+      <div class="col-4 ">
+        <div class="image-with-text text-center">
+          <img src="Resources/type3.jpg" alt="type 3" class="img-fluid rounded-circle">
+          <div class="display-6 mb-3 text-center">Type 3</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet delectus exercitationem veniam,
+          doloribus laudantium non cumque id! Fuga nam eum autem illum hic sunt dolores dignissimos molestias odit
+          inventore?</p>
+        <button type="button" class="btn btn-info  mt-3">Book Now @699$</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 2013 </p>
+    <div class="col-md-4 text-center d-lg-flex justify-content-center align-items-center">
+      <div class="btn btn-primary me-3 btn-sm">
+        <a href="#" class="nav-link text-light ">About Us</a>
+      </div>
+      <div class="me-3 text-primary">
+        <a href="#" class="nav-link">Support 24x7</a>
+      </div>
+      <div class="me-3 text-primary">
+        <a href="#" class="nav-link">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <h4>Vacation Rentals</h4>
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

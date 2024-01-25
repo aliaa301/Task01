@@ -1,0 +1,18 @@
+.navbar-custom{
+    font-size: 12px;
+}
+.image-background{
+    background-image: url(Resources/type1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ height: 250px;
+    position:relative;
+
+}
+.rounded-circle {
+  border-radius: 50%!important;
+  width: 100px!important;
+  height: 100px!important; 
+  object-fit: cover; 
+}
